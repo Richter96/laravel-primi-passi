@@ -24,8 +24,25 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     $data = [
-        'title' => 'About Bianchi in strada'
-    ];
+        'title' => 'About history Bianchi ',
+        'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consequatur quis porro laboriosam sed, expedita officia libero repudiandae asperiores itaque, fugiat similique odio, tempora nisi eligendi ipsa id voluptatibus tempore!'
 
+    ];
     return view('about', $data);
 })->name('about');
+
+Route::get('/e_bike', function () {
+    $data = [
+        'title' => 'About history Bianchi ',
+        'cards' => [
+            'E-OMNIAE',
+            'ROADE',
+            'GRAVELE',
+            'MTBE',
+            'TOURERE',
+            'URBAN',
+        ],
+
+    ];
+    return view('e_bike', $data);
+})->name('e_bike');

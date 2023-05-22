@@ -27,7 +27,7 @@
                             <a class="nav-link" href="/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="{{ route('e_bike')}}">E-bike</a>
                         </li>
                     </ul>
                 </div>
